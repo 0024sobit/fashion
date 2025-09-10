@@ -4,6 +4,7 @@ import CategoryMenu from '../components/CategoryMenu'
 import NewCollections from '../components/NewCollections'
 import Collections from '../components/Collections'
 import Fashion from '../components/Fashion'
+import Footer from '../components/Footer'
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
         <NewCollections />
         <Collections />
         <Fashion />
+        <Footer /> 
     </div>
   )
 }
