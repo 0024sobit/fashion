@@ -1,0 +1,36 @@
+@import url('https://db.onlinewebfonts.com/c/10ca44c0f99ea91b0aef35aa6e6388aa?family=Beatrice+Deck+Trial');
+@import url('https://db.onlinewebfonts.com/c/your-font-id-here?family=Beatrice+Display+Trial+Black');
+
+
+@tailwind base;
+@tailwind components;  
+@tailwind utilities;
+
+.font1 {
+  font-family: "Beatrice Deck Trial", sans-serif;
+}
+.font2{  
+   font-family: "Beatrice Display Trial Black", sans-serif;          
+}
+@import "tailwindcss"; 
+
+  
+
+a.active hr{
+    display: block;    
+}  
+::-webkit-scrollbar {
+  display: none;
+}
+.bg-texture {
+  background-color: #f4f4f4;  
+  background-image: 
+    repeating-radial-gradient(  
+      circle at 0 0,
+      #00000010, 
+      #00000010 1px,
+      transparent 1px,
+      transparent 100%
+    );
+  background-size: 3px 3px;
+}
