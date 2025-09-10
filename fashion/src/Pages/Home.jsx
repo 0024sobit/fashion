@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar'
 import CategoryMenu from '../components/CategoryMenu'          
 import NewCollections from '../components/NewCollections'
 import Collections from '../components/Collections'
+import Fashion from '../components/Fashion'
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
         <CategoryMenu />
         <NewCollections />
         <Collections />
+        <Fashion />
     </div>
   )
 }

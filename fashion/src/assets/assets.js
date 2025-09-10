@@ -64,6 +64,10 @@ import group53 from './group53.png';
 import vector from './vector.png';
 import vector1 from './vector1.png';
 import vector2 from './vector2.png';
+import rectangle1 from './rectangle1.png'
+import rectangle2 from './rectangle2.png'
+import rectangle3 from './rectangle3.png'
+import rectangle4 from './rectangle4.png'
 
 const assets = {
   group4,   
@@ -75,6 +79,10 @@ const assets = {
   vector,
   vector1,
   vector2,
+  rectangle1,
+  rectangle2,
+  rectangle3,
+  rectangle4
 };
 
 export default assets; 
