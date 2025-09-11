@@ -7,17 +7,17 @@ const Navbar = () => {
   return (
     <div className='flex items-center justify-between py-6 '>  
       <div className='flex gap-6 items-center'>
-        <img onClick={() => setVisible(true)} className='w-[26px] h-[16px] cursor-pointer' src={assets.group36} alt="" />  
+        <img onClick={() => setVisible(true)} className='w-[26px] h-[16px] cursor-pointer' src={assets.group36} alt="" />    
         <ul className='hidden sm:flex gap-5 text-sm text-black font1'>    
             <NavLink to={'/'} className='flex flex-col items-center gap-1 '>         
                 <p>Home</p>         
                 <hr  className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden'/>                                                                     
             </NavLink>  
-            <NavLink to={'/collection'} className='flex flex-col items-center gap-1 '>       
-                <p>Collections</p>       
-                <hr  className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden'/>
-            </NavLink>
             <NavLink to={'/collection'} className='flex flex-col items-center gap-1 '>          
+                <p>Collections</p>       
+                <hr  className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden'/>          
+            </NavLink>
+            <NavLink to={'/new'} className='flex flex-col items-center gap-1 '>          
                 <p>New</p>       
                 <hr  className='w-2/4 border-none h-[1.5px] bg-gray-700 hidden'/>             
             </NavLink>

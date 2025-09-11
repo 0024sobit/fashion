@@ -69,6 +69,8 @@ import rectangle2 from './rectangle2.png'
 import rectangle3 from './rectangle3.png'
 import rectangle4 from './rectangle4.png'
 import vr from './vr.png'
+import dropdown_icon from './dropdown_icon.png'
+import blacklove from './blacklove.png'
 
 const assets = {
   group4,   
@@ -85,6 +87,8 @@ const assets = {
   rectangle3,
   rectangle4,
   vr,
+  dropdown_icon,
+  blacklove,
 };
 
 export default assets; 
