@@ -7,7 +7,7 @@ const ProductItem = ({id, image,name,price,subCategory, showCurrency = true}) =>
   return (  
     <Link className=' shrink-0' to={`/product/${id}`}>     
         <div className='overflow-hidden '>    
-            <img className='hover:scale-110 transition ease-in-out w-[167px] h-[173px] md:w-[366px] md:h-[376px]' src={image[0]} alt="" />    
+            <img className='hover:scale-110 object-contain transition ease-in-out w-[167px] h-[173px] md:w-[366px] md:h-[376px]' src={image[0]} alt="" />    
         </div> 
         <p className='pt-3 pb-1 text-gray-500 font1'>{subCategory}</p> 
         <div className='flex flex-row w-full py-1 justify-between font1 text-[18px] '>

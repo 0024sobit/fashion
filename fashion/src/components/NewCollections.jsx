@@ -44,7 +44,7 @@ const NewCollections = () => {
           )}
         </div>
       </div>
-      <Link to={'/collection'} className="h-[40px] w-[169px] justify-between absolute md:w-[265px] flex items-center px-3 bg-[#D9D9D9] bottom-28 md:bottom-45">  
+      <Link to={'/collection'} className="h-[40px] w-[169px] justify-between absolute md:w-[265px] flex items-center px-3 bg-[#D9D9D9] bottom-28 md:bottom-45 lg:bottom-46">  
         <span>Go To Shop</span>
         <img src={assets.vector} alt="" />
       </Link>
