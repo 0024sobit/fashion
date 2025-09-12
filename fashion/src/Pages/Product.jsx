@@ -20,8 +20,8 @@ const Product = () => {
         }
     })
   };
-  useEffect(() => { 
-    fetchProductData()
+  useEffect(() => {  
+    fetchProductData()  
   }, [productId])
 
   return productData ? (
@@ -40,7 +40,7 @@ const Product = () => {
                 }
               </div>
           </div>
-            <div className='flex flex-col  md:border md:border-gray-300  md:px-6 md:pt-20  py-2 relative'>   
+            <div className='flex flex-col  md:border md:border-gray-300  md:px-6 md:pt-20  py-2 relative'>     
               <div className='flex flex-row md:flex-col justify-between md:justify-normal tracking-wider'>
                   <h3 className='font1 font-medium text-[14px]  md:font-extrabold'>{productData.name}</h3>
                   <p className='font-medium md:pt-1 translate-y-7 md:translate-0'>{currency} {productData.price}</p>  

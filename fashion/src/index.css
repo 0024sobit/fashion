@@ -1,5 +1,6 @@
 @import url('https://db.onlinewebfonts.com/c/10ca44c0f99ea91b0aef35aa6e6388aa?family=Beatrice+Deck+Trial');
 @import url('https://db.onlinewebfonts.com/c/your-font-id-here?family=Beatrice+Display+Trial+Black');
+ @import url('https://fonts.cdnfonts.com/css/beatrice-display-trial');
 
 
 @tailwind base;
@@ -11,6 +12,12 @@
 }
 .font2{  
    font-family: "Beatrice Display Trial Black", sans-serif;          
+}
+.font3{
+   font-family: 'Beatrice Display Trial', sans-serif;
+}
+.font4{
+  font-family: 'Beatrice Headline Trial', sans-serif;
 }
 @import "tailwindcss"; 
 

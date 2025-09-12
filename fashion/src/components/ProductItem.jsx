@@ -16,6 +16,6 @@ const ProductItem = ({id, image,name,price,subCategory, showCurrency = true}) =>
         </div>
     </Link>
   )
-}
+}     
 
-export default ProductItem
+export default ProductItem    

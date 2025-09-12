@@ -7,9 +7,9 @@ const Collections = () => {
     const { products } = useContext(ShopContext)
     const [collection, setCollection] = useState([])
 
-    useEffect(() => {        
+  useEffect(() => {        
         if(products && products.length > 0){
-            const random = [...products].sort(() => Math.random() - 0.5)        
+            const random = [...products].sort(() => Math.random() - 0.5)       
             setCollection(random.slice(0,10))  
         }
     }, [])  

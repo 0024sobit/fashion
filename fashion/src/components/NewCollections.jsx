@@ -36,7 +36,7 @@ const NewCollections = () => {
                 id={item._id}
                 image={item.image}
                 showCurrency={isMobile ? true : false}
-                subCategory={isMobile ? item.subCategory : ""}       
+                subCategory={isMobile ? item.subCategory : ""}  
                 name={isMobile ? item.name : ""}
                 price={isMobile ? item.price : ""}  
               />
