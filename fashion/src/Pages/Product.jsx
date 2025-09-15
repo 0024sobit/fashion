@@ -26,11 +26,11 @@ const Product = () => {
 
   return productData ? (
     <div className=' opacity-100   transition-opacity easein duratonn-500'>   
-     <Navbar />
+     <Navbar />  
         <div className='flex flex-col md:flex-row gap-12 md:px-20 md:pt-20 md:pb-5'>  
-          <div className='flex-1 flex flex-col  gap-3 md:flex-row md:w-[875px] mx-auto'>     
+          <div className='flex-1 flex flex-col  gap-3 md:flex-row md:w-[875px] mx-auto'>         
             <div className='h-auto  md:w-[367px] md:border border-gray-300 '>  
-                  <img className='w-full h-full object-cover' src={image} alt="" />
+                  <img className='w-full h-full object-cover' src={image} alt="" />   
               </div>
               <div className='flex md:flex-col overflow-x-auto md:overflow-y-scroll justify-between md:justify-normal md:w-[100px]'>    
                 {
