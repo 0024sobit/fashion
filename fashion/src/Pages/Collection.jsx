@@ -31,6 +31,8 @@ const toggleSubCategory = (value) => {
       ? prev.filter(item => item !== value)
       : [...prev, value]
   );
+  console.log(subCategory);
+  
 };
 
 const toggleSize = (selectedSize) => {
@@ -375,7 +377,7 @@ const applyFilter = () => {
                 </span>
               </div>
               <h1 className="font1 text-5 font-black">PRODUCTS</h1>
-              <div className="bg-[#D9D9D9] text-center inline-flex items-center w-full    px-5 my-5  h-[40px] ">
+              <div className="bg-[#D9D9D9] text-center inline-flex items-center w-full    px-5 my-5  h-[40px] ">   
                 <img
                   className="w-4"
                   src={assets.group4}
@@ -393,24 +395,24 @@ const applyFilter = () => {
                 showFilter ? "w-max absolute  overflow-x-hidden " : ""
               }`}
             >
-              <div className="py-2 px-6 border-1 border-gray-400 flex items-center justify-self-center w-[101px]   h-[38px]"  onClick={() => toggleSubCategory('Topwear')}>
+              <button className="py-2 px-6 border-1 border-gray-400 flex items-center justify-self-center w-[101px]   h-[38px]"  onClick={() => toggleSubCategory("Topwear")}>
                 Topwear
-              </div>
-              <div className="py-2 px-1 border-1 border-gray-400 flex items-center justify-self-center w-[101px] shrink-0 h-[38px]" onClick={() => toggleSubCategory('Bottomwear')}>  
+              </button>
+              <button className="py-2 px-1 border-1 border-gray-400 flex items-center justify-self-center w-[101px] shrink-0 h-[38px]" onClick={() => toggleSubCategory('Bottomwear')}>   
                 Bottomwear
-              </div>
-              <div className="py-2 px-6 border-1 border-gray-400 flex items-center justify-self-center w-[101px] shrink-0 h-[38px]" onClick={() => toggleSubCategory('Topwear')}>
+              </button>
+              <button className="py-2 px-6 border-1 border-gray-400 flex items-center justify-self-center w-[101px] shrink-0 h-[38px]" onClick={() => toggleSubCategory('Topwear')}>
                 Shirts
-              </div>
-              <div className="py-2 px-6 border-1 border-gray-400 flex items-center justify-self-center w-[101px] shrink-0 h-[38px]" onClick={() => toggleSubCategory('Bottomwear')}>
+              </button>
+              <button className="py-2 px-6 border-1 border-gray-400 flex items-center justify-self-center w-[101px] shrink-0 h-[38px]" onClick={() => toggleSubCategory('Bottomwear')}> 
                 Jeans
-              </div>
-              <div className="py-2 px-3 border-1 border-gray-400 flex items-center justify-self-center w-[101px] shrink-0 h-[38px]" onClick={() => toggleSubCategory('Topwear')}> 
+              </button>   
+              <button className="py-2 px-3 border-1 border-gray-400 flex items-center justify-self-center w-[101px] shrink-0 h-[38px]" onClick={() => toggleSubCategory('Topwear')}>     
                 Bestsellers
-              </div>
-              <div className="py-2 px-2 border-1 border-gray-400 flex items-center justify-self-center w-[101px] shrink-0 h-[38px]" onClick={() => toggleSubCategory('Winterwear')}>
+              </button>
+              <button className="py-2 px-2 border-1 border-gray-400 flex items-center justify-self-center w-[101px] shrink-0 h-[38px]" onClick={() => toggleSubCategory("Winterwear")}>
                 winterwear
-              </div>
+              </button>         
             </div>
           </div>
           <div
@@ -425,7 +427,7 @@ const applyFilter = () => {
                 subCategory={item.subCategory}
                 id={item._id}  
                 image={item.image}
-                price={item.price}
+                price={item.price} 
               />
             ))}
           </div>
