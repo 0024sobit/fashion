@@ -7,17 +7,17 @@ const CartTotal = () => {
 
     const handleContinue = () =>  {
         if(!agree) {
-            alert("please agree to the Terms and Conditions before continuing")    
+            alert("please agree to the Terms and Conditions before continuing")        
             return
         }
         navigate('/place-order')   
     }
   return (
-    <div className='border border-gray-400 py-10 px-10 flex flex-col rounded-sm'>  
-        <h2 className='font1 font-medium text-[14px] '>ORDER SUMMARY</h2>           
+    <div className='border border-gray-400 py-10 px-10 flex flex-col rounded-sm'>    
+        <h2 className='font1 font-medium text-[14px] '>ORDER SUMMARY</h2>    
         <div className='flex flex-col gap-2 mt-3 text-sm'>
             <div className='flex justify-between font1 text-[13px]'>  
-                <p>Subtotal</p>
+                <p>Subtotal</p>   
                 <p>{currency}{getCartAmount()}.00</p> 
             </div>
             <div className='flex justify-between font1 text-[13px]'>  
@@ -41,4 +41,4 @@ const CartTotal = () => {
   )
 }
    
-export default CartTotal
+export default CartTotal         
