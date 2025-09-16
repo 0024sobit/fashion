@@ -18,4 +18,4 @@ const ProductItem = ({id, image,name,price,subCategory, showCurrency = true}) =>
   )
 }     
  
-export default ProductItem     
+export default ProductItem        

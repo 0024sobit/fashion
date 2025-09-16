@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import { ShopContext } from "../context/ShopContext";
 import assets from "../assets/assets";
+import CartTotal from "../components/CartTotal";
 
 const Cart = () => {
   const { products, currency, cartItems, navigate, updateQuantity } =
@@ -27,7 +28,7 @@ const Cart = () => {
   return (
     <div>
       <Navbar />
-      <div className="mt-14 flex flex-row">
+      <div className="mt-14 flex flex-col md:flex-row md:justify-between">
         <div className="flex flex-col ">
           <div className="flex  items-center ">
             <div className="font2  text-[13px] font-semibold ">
@@ -51,12 +52,12 @@ const Cart = () => {
                     <img
                       src={productData.image[0]}
                       alt={productData.name}
-                      className="w-[265px] h-[314px] object-cover"
+                      className="w-[265px] h-[314px] object-cover border border-gray-300"
                     />
                     <p className="pt-3 pb-1 text-gray-500 font1">
                       {productData.subCategory}
                     </p>
-                    <div className="flex flex-row w-full py-1 justify-between font1 text-[18px]">
+                    <div className="flex flex-row w-full py-1 justify-between font1 text-[18px]">  
                       <p className="text-[12px] whitespace-nowrap overflow-ellipsis w-[113px] md:w-full overflow-x-hidden">
                         {productData.name}
                       </p>
@@ -112,6 +113,11 @@ const Cart = () => {
             })}
           </div>
         </div>
+        <div className="flex justify-end my-20 ">   
+            <div className="w-full sm:w-[450px] md:w-[306px]">
+                <CartTotal />
+            </div>
+          </div>
       </div>
     </div>
   );
