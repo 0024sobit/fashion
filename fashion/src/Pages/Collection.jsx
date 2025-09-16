@@ -28,11 +28,9 @@ const toggleCategory = (e) => {
 const toggleSubCategory = (value) => {  
   setSubCategory(prev =>
     prev.includes(value)
-      ? prev.filter(item => item !== value)
+      ? prev.filter(item => item !== value)     
       : [...prev, value]
-  );
-  console.log(subCategory);
-  
+  );  
 };
 
 const toggleSize = (selectedSize) => {
@@ -99,7 +97,7 @@ const applyFilter = () => {
           }`}
         >
           <div
-            className={`min-w-[25%] h-[30px] ${
+            className={`min-w-[25%] h-[30px] md:min-w-[26%] lg:min-w-[19%] ${
               showFilter ? "min-w-[37%] h-[30px] mr-4" : ""    
             }`}
           >
@@ -148,7 +146,7 @@ const applyFilter = () => {
                       className={`transform transition-transform duration-200 w-[8px] rotate-90 h-[10px] filter brightness-10 ${
                         openSection === "availability" ? "rotate-270" : ""
                       }`}
-                      src={assets.dropdown_icon}
+                      src={assets.dropdown_icon}  
                       alt=""
                     />
                   </button>
@@ -216,7 +214,7 @@ const applyFilter = () => {
                     </div>
                   )}
                 </div>
-                <div className="border-t-2 border-dotted border-gray-300 mt-1 ">
+                <div className="border-t-2 border-dotted border-gray-300 mt-1 ">  
                   <button
                     onClick={() => togglesection("color")}
                     className={`font1 text-[14px] font-medium flex justify-between items-center py-3 w-full border-none text-sm `}
@@ -363,11 +361,11 @@ const applyFilter = () => {
           </div>
 
           <div
-            className={`flex flex-col w-[100%] mt-3 ${
+            className={`flex flex-col w-[100%] mt-3 md:items-start ml-1  ${
               showFilter ? "mt-12" : ""
             }`}
           >
-            <div className="hidden md:flex  flex-col items-center md:items-start w-[330px] sm:w-[357px] md:w-[367px] justify-center   mx-auto  ">
+            <div className="hidden md:flex   flex-col items-center md:items-start w-[330px] sm:w-[357px] md:w-[367px] justify-center     ">
               <div className="flex  w-1/2 items-center justify-center md:justify-start">
                 <span className="text-gray-400 text-[12px] pr-[1px]">
                   Home{" "}
@@ -391,7 +389,7 @@ const applyFilter = () => {
               </div>
             </div>
             <div
-              className={`grid grid-cols-3 grid-rows-2 gap-x-1 gap-y-2   shrink-0 overflow-x-hidden h-[84px] ${
+              className={`grid grid-cols-3 grid-rows-2 gap-x-1 gap-y-2 w-[348px]   overflow-x-hidden h-[84px] ${   
                 showFilter ? "w-max absolute  overflow-x-hidden " : ""
               }`}
             >
@@ -414,23 +412,24 @@ const applyFilter = () => {
                 winterwear
               </button>         
             </div>
-          </div>
-          <div
-            className={`flex flex-wrap pt-4 gap-x-[9px] gap-y-4 ${
+            <div
+            className={`flex flex-wrap sm:grid sm:grid-cols-3 md:grid md:grid-cols-2 lg:grid-cols-3 pt-4 gap-x-[9px] gap-y-4   ${          
               showFilter ? "mt-40 " : ""
             }`}
           >
-            {filterProducts.map((item, i) => (
+            {filterProducts.map((item, i) => (  
               <ProductItem
                 key={i}
                 name={item.name}
-                subCategory={item.subCategory}
-                id={item._id}  
+                subCategory={item.subCategory}  
+                id={item._id}   
                 image={item.image}
                 price={item.price} 
               />
             ))}
           </div>
+          </div>
+          
         </div>
       </div>
     </div>

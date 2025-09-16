@@ -24,16 +24,16 @@ const Navbar = () => {
         </ul>
       </div>
       <div>
-        <img className='w-[29px] h-[29px] md:w-[50px] md:h-[50px]' src={assets.group53} alt="" />       
+        <img className='w-[29px] h-[29px] md:w-[50px] md:h-[50px]' src={assets.group53} alt="" />        
       </div>
       <div className='flex items-center justify-between gap-4'>         
         <div className='hidden sm:flex sm:bg-black  w-[40px] h-[40px] rounded-full justify-center items-center'>
             <img src={assets.group9} alt="" />
         </div>
-        <NavLink to={'/cart'} className='hidden sm:flex sm:bg-black w-[40px] h-[40px] rounded-[21px] justify-center items-center px-10'>     
+        <NavLink to={'/cart'} className='hidden md:flex sm:bg-black w-[40px] h-[40px] rounded-[21px] justify-center items-center px-10'>     
             <span className='text-white '>Cart</span> 
         </NavLink> 
-        <NavLink to={'/placeorder'} className=' w-[41px] h-[41px]  border-black sm:w-[40px] sm:h-[40px] border-6 rounded-full '>
+        <NavLink to={'/cart'} className=' w-[41px] h-[41px]  border-black sm:w-[40px] sm:h-[40px] border-6 rounded-full md:hidden'>
             <img src={assets.group11} alt="" />
         </NavLink>
         <div className='w-[41px] h-[41px]  bg-black sm:w-[40px] sm:h-[40px] rounded-full flex items-center justify-center'>       

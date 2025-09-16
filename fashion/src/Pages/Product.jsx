@@ -6,10 +6,10 @@ import assets from '../assets/assets'
 
 const Product = () => {
   const { productId } = useParams()
-  const { products, currency} = useContext(ShopContext)    
+  const { products, currency, addToCart} = useContext(ShopContext)    
   const [productData, setProductData ] = useState(false)    
   const [image, setImage] = useState("") 
-  const [size, setSize] = useState("")
+  const [size, setSize] = useState("") 
 
   const fetchProductData = async () => {
     products.map((item,i) => {
@@ -40,7 +40,7 @@ const Product = () => {
                 }
               </div>
           </div>
-            <div className='flex flex-col  md:border md:border-gray-300  md:px-6 md:pt-20  py-2 relative'>     
+            <div className='flex flex-col  md:border md:border-gray-300  md:px-6 md:pt-20  py-2 relative'> 
               <div className='flex flex-row md:flex-col justify-between md:justify-normal tracking-wider'>
                   <h3 className='font1 font-medium text-[14px]  md:font-extrabold'>{productData.name}</h3>
                   <p className='font-medium md:pt-1 translate-y-7 md:translate-0'>{currency} {productData.price}</p>  
@@ -66,14 +66,14 @@ const Product = () => {
                         </button>
                       ))
                     }
-                  </div>
+                  </div>  
               </div>
-              <div  className='font-medium text-gray-400 text-[10px] pt-1 md:pt-2'>FIND YOUR SIZE | MEASUREMENT GUIDE</div> 
-               <div className='fixed bottom-0 bg-[#D9D9D9] w-full text-[12px] h-[49px] -mx-4 text-black flex items-center justify-center md:[49px] md:w-[229px] md:h-10 md:relative md:mt-8 md:mb-2 md:mx-auto '>
+              <div  className='font-medium text-gray-400 text-[10px] pt-1 md:pt-2'>FIND YOUR SIZE | MEASUREMENT GUIDE</div>  
+               <button className='fixed bottom-0 bg-[#D9D9D9] w-full text-[12px] h-[49px] -mx-4 text-black flex items-center justify-center md:[49px] md:w-[229px] md:h-10 md:relative md:mt-8 md:mb-2 md:mx-auto transition transform active:bg-amber-600 ' onClick={() => addToCart(productData._id, size)}>
                   ADD
-              </div>
-              <div className='bg-white w-[34px] h-[34px] flex items-center right-1 top-0 mb:right-0 absolute justify-center'>
-                <img className='   bg-white' src={assets.blacklove} alt="" />   
+              </button>
+              <div className='bg-white w-[34px] h-[34px] flex items-center right-1 top-0 mb:right-0 absolute justify-center'>    
+                <img className='   bg-white' src={assets.blacklove} alt="" />     
               </div>
             </div>
         </div>
