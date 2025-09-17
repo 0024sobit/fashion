@@ -6,18 +6,19 @@ import Cart from './Pages/Cart'
 import Product from './Pages/Product'
 import Placeorder from './Pages/Placeorder'     
 import New from './Pages/New'
+import { ToastContainer, toast } from 'react-toastify';   
 
 const App = () => {      
   return (
-    <div className='min-h-screen bg-texture px-4 sm:px-5 md:px-5 lg:px-9'>   
-        
+    <div className='min-h-screen bg-texture px-4 sm:px-5 md:px-5 lg:px-9'> 
+        <ToastContainer />
         <Routes>     
-          <Route path='/' element={<Home />} />     
+          <Route path='/' element={<Home />} />      
           <Route path='/collection' element={<Collection />} />    
           <Route path='/cart' element={<Cart />} />      
           <Route path='/product/:productId' element={<Product />} />    
           <Route path='/place-order' element={<Placeorder />} />   
-          <Route path='/new' element={<New />} />      
+          <Route path='/new' element={<New />} />       
         </Routes>
        
     </div>

@@ -90,7 +90,7 @@ const Cart = () => {
                           +
                         </button>
 
-                        <span className="text-sm font2 font-bold">{item.quantity}</span>
+                        <span className="text-sm font2 font-bold">{item.quantity}</span> 
 
                         <button
                           onClick={() =>
@@ -100,7 +100,7 @@ const Cart = () => {
                               Math.max(item.quantity - 1, 0)
                             )
                           }
-                          className="border-t border-gray-400 w-full text-center"       
+                          className="border-t border-gray-400 w-full text-center"         
                         >
                           -
                         </button>
