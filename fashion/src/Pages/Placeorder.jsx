@@ -57,7 +57,7 @@ const Placeorder = () => {
             </div>
             <div className="h-[40px] justify-between  md:w-[265px] flex items-center px-3 bg-[#D9D9D9] mt-6 w-full  md:ml-auto">
               <span>Shipping</span>
-              <img src={assets.vector} alt="" />
+              <img src={assets.vector} alt="" />  
             </div>
           </div>   
         </div>   
