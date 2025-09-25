@@ -18,7 +18,7 @@ const Fashion = () => {
             <img className="w-[120px] h-[130px] shrink-0 object-cover sm:w-[200px] sm:h-[210px] md:w-[260px] md:h-[270px] lg:w-[330px] lg:h-[350px]" src={assets.rectangle3} alt="" />
             <img className="w-[120px] h-[130px] shrink-0 object-cover mt-10 sm:w-[200px] sm:h-[210px] md:mt-15 md:w-[260px] md:h-[270px] lg:w-[330px] lg:h-[350px] lg:mt-20 " src={assets.rectangle4} alt="" />
       </div>  
-    </div>
+    </div>   
   );
 };
 

@@ -105,8 +105,8 @@ export const products = [
         price: 100,
         image: [p_img1],
         category: "Women",
-        subCategory: "Topwear",
-        sizes: ["S", "M", "L"],
+        subCategory: "Topwear",   
+        sizes: ["S", "M", "L"],   
         date: 1716634345448,
         bestseller: true
     },

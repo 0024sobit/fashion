@@ -16,14 +16,14 @@
 .font3{
    font-family: 'Beatrice Display Trial', sans-serif;
 }
-.font4{
+.font4{   
   font-family: 'Beatrice Headline Trial', sans-serif;
 }
 @import "tailwindcss"; 
 
 *{
   box-sizing: border-box;
-}
+}  
 
 a.active hr{
     display: block;    

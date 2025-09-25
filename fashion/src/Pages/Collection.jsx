@@ -18,35 +18,35 @@ const Collection = () => {
   };
 
 const toggleCategory = (e) => {
-  if(Category.includes(e.target.value)){
+  if(Category.includes(e.target.value)){  
     setCategory(prev => prev.filter(item => item !== e.target.value))
   } else {
-    setCategory(prev => [...prev, e.target.value])
+    setCategory(prev => [...prev, e.target.value]) 
   }
 }
 
-const toggleSubCategory = (value) => {  
+const toggleSubCategory = (value) => {   
   setSubCategory(prev =>
-    prev.includes(value)
-      ? prev.filter(item => item !== value)     
-      : [...prev, value]
+    prev.includes(value)   
+      ? prev.filter(item => item !== value)       
+      : [...prev, value] 
   );  
-};
-
-const toggleSize = (selectedSize) => {
-  setSize(prev =>
+};  
+          
+const toggleSize = (selectedSize) => {  
+  setSize(prev =>     
     prev.includes(selectedSize)   
       ? prev.filter(item => item !== selectedSize)         
       : [...prev, selectedSize]
   );
-};
-const applyFilter = () => {
-  let productsCopy = products.slice();
+};  
+const applyFilter = () => {    
+  let productsCopy = products.slice();   
 
   if (size.length > 0) {      
     productsCopy = productsCopy.filter((item) => 
       item.sizes.some((s) => size.includes(s))  
-    );
+    );  
   }
 
   if (Category.length > 0) { 

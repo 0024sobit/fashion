@@ -43,7 +43,7 @@ const Navbar = () => {
       <div className={`fixed top-0 left-0 w-full h-full bg-white transition-all z-50 opacity-100 md:hidden  ${visible ? 'block' : 'hidden'}`}>           
           <div className='flex flex-col text-gray-900 h-full bg-gray mt-5'>
               <div onClick={() => setVisible(false)} className='flex items-center gap-4 p-3'>   
-                <img className='rotate-180' src={assets.vector} alt="" />
+                <img className='rotate-180' src={assets.vector} alt="" /> 
               </div>
               <NavLink onClick={() => setVisible(false)} className='flex  py-3 pl-6 border-b border-gray-300' to={'/'}>HOME</NavLink>
               <NavLink onClick={() => setVisible(false)} className='flex  py-3 pl-6 border-b border-gray-300' to={'/collection'}>COLLECTION</NavLink>

@@ -12,17 +12,17 @@ const App = () => {
   return (
     <div className='min-h-screen bg-texture px-4 sm:px-5 md:px-5 lg:px-9'> 
         <ToastContainer />
-        <Routes>     
-          <Route path='/' element={<Home />} />      
-          <Route path='/collection' element={<Collection />} />    
-          <Route path='/cart' element={<Cart />} />      
-          <Route path='/product/:productId' element={<Product />} />    
-          <Route path='/place-order' element={<Placeorder />} />   
-          <Route path='/new' element={<New />} />       
+        <Routes>      
+          <Route path='/' element={<Home />} />    
+          <Route path='/collection' element={<Collection />} />     
+          <Route path='/cart' element={<Cart />} />    
+          <Route path='/product/:productId' element={<Product />} />         
+          <Route path='/place-order' element={<Placeorder />} />     
+          <Route path='/new' element={<New />} />   
         </Routes>
        
-    </div>
+    </div> 
   )
 }
   
-export default App  
+export default App   

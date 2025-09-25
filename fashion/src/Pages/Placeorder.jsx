@@ -65,7 +65,7 @@ const Placeorder = () => {
         <div className='border border-gray-300 relative py-10 px-6 flex flex-col sm:w-[425px] lg:w-[306px]   mt-auto md:flex-1 mb-10 md:mb-16' >    
           <h2 className='font1 text-[14px] tracking-wide'>YOUR ORDER</h2>
           <div className='flex flex-col py-6 gap-3'>
-              {cartData.length === 0 ? (
+              {cartData.length === 0 ? (  
                 <p className='text-gray-500 text-sm'>No items in cart</p>   
               ) : (
                 cartData.map((item, i) => {
@@ -76,7 +76,7 @@ const Placeorder = () => {
                         <div className='flex flex-col'>
                           <div className='flex gap-6 mt-1 justify-between '>    
                             <p className='font1 text-[12px] overflow-ellipsis  '>{productData.name}</p>       
-                            <p  className='text-[12px] tracking-tight underline'>Change</p>
+                            <p  className='text-[12px] tracking-tight underline '>Change</p>
                           </div>
                           <p className='font1 text-[12px] text-gray-500 mt-2'>color/{item.size}</p>
                           <div className='mt-auto flex justify-between'>  
