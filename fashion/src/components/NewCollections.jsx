@@ -28,22 +28,22 @@ const NewCollections = () => {
       </div>    
 
       <div className="flex overflow-x-scroll gap-6">      
-        <div className="flex gap-5 ">
+        <div className="flex gap-5 ">        
           {(isMobile ? products.slice(0, 10) : products.slice(0, 2)).map( 
             (item, i) => (
-              <ProductItem
-                key={i} 
-                id={item._id}  
-                image={item.image}       
+              <ProductItem      
+                key={i}    
+                id={item._id}    
+                image={item.image}     
                 showCurrency={isMobile ? true : false}   
-                subCategory={isMobile ? item.subCategory : ""}    
-                name={isMobile ? item.name : ""}    
-                price={isMobile ? item.price : ""}       
+                subCategory={isMobile ? item.subCategory : ""}      
+                name={isMobile ? item.name : ""}     
+                price={isMobile ? item.price : ""}     
               />
-            )
-          )}      
+            )    
+          )}            
         </div>   
-      </div>
+      </div>       
       <Link to={'/collection'} className="h-[40px] w-[169px] justify-between absolute md:w-[265px] flex items-center px-3 bg-[#D9D9D9] bottom-28 md:bottom-45 lg:bottom-46">  
         <span>Go To Shop</span>
         <img src={assets.vector} alt="" />  
