@@ -10,7 +10,7 @@ const NewCollections = () => {
   const [isMobile, setIsMobile] = useState(false);    
 
   useEffect(() => {
-    const handleResize = () => {
+    const handleResize = () => {   
       setIsMobile(window.innerWidth < 768);   
     };
     handleResize();   
@@ -22,20 +22,20 @@ const NewCollections = () => {
     <div className="flex w-full  flex-col md:flex-row my-10 md:my-20 gap-10 justify-between">   
       <div className="relative">    
         <Hero text1={"NEW"} text2={"COLLECTIONS"} />       
-        <div className="text-gray-500 ">   
+        <div className="text-gray-500 ">      
           Summer <br /> 2025  
         </div>
       </div>    
 
       <div className="flex overflow-x-scroll gap-6">      
-        <div className="flex gap-5 ">        
+        <div className="flex gap-5 ">     
           {(isMobile ? products.slice(0, 10) : products.slice(0, 2)).map( 
             (item, i) => (
-              <ProductItem      
+              <ProductItem        
                 key={i}    
                 id={item._id}    
                 image={item.image}     
-                showCurrency={isMobile ? true : false}   
+                showCurrency={isMobile ? true : false}        
                 subCategory={isMobile ? item.subCategory : ""}      
                 name={isMobile ? item.name : ""}     
                 price={isMobile ? item.price : ""}     

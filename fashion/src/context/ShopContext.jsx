@@ -25,7 +25,7 @@ const ShopContextProvider = (props) => {
       }
     } else {
       cartData[itemId] = {};
-      cartData[itemId][size] = 1;
+      cartData[itemId][size] = 1;      
     }
     setCartItems(cartData);
   };
@@ -37,7 +37,7 @@ const ShopContextProvider = (props) => {
   };      
                      
   const getCartAmount = () => {
-    let totalAmount = 0;      
+    let totalAmount = 0;         
     for (const items in cartItems) {    
       let itemInfo = products.find((product) => product._id === items);
       for (const item in cartItems[items]) {
